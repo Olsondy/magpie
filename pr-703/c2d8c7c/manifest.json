@@ -1,0 +1,34 @@
+{
+  "summary": "路由页的路由解释文案被改写：新增「子代理任务已加密，只能使用 ChatGPT 账号」与「它回答了主代理，因此优先用它读取这条加密任务」，子代理请求改为说明由 magpie 在路由组内选模型，额度节奏不再一律说成「每周」，无候选与无命中规则的说明更短更准确。",
+  "scenes": [
+    {
+      "title": "路由页的请求解释",
+      "shots": [
+        {
+          "file": "01-routing-overview.png",
+          "caption": "路由页：实时路由说明与最近的请求列表（沙盒里只有 DeepSeek）",
+          "width": 2560
+        },
+        {
+          "file": "02-routing-steps.png",
+          "caption": "这个请求的路由步骤文案",
+          "width": 2524
+        },
+        {
+          "file": "03-routing-request-list.png",
+          "caption": "请求列表里每个请求都可以点开看解释",
+          "width": 1328
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "本沙盒只有 DeepSeek 一个供应商、没有订阅账号，也没有加密的 Codex 子代理请求，所以新版解释里最关键的两句——「子代理任务已加密，只能使用 ChatGPT 账号」「{who} 回答了主代理，因此优先用它读取这条加密任务」以及「{agent} 请求了子代理；具体模型由 magpie 在这个路由组内选择」——在真实路由页里都不会出现；同样，DeepSeek 只有一个 Key、没有路由组和规则，改写后的「没有适用于本次请求的候选」「没有命中规则」和额度节奏（剩余额度除以距重置的小时数）的句子也无从显示。只有 Claude/ChatGPT 混合组加 sealed 子代理任务的 trace（#619/#576 的场景）才看得到。",
+  "interactive": true,
+  "pages": 1
+}
